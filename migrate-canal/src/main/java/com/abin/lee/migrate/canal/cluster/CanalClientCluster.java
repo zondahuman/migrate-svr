@@ -118,14 +118,14 @@ public class CanalClientCluster {
         List<Abin> list = Lists.newArrayList();
          if(StringUtils.equals(entry.getHeader().getSchemaName(), "canal")){
              if(StringUtils.equals(entry.getHeader().getTableName(), "abin")){
+                 Abin abin = new Abin();
                  for (Column column : columns) {
-                     Abin abin = new Abin();
                      if(StringUtils.equals(column.getName(), "id"))
                          abin.setId(Ints.tryParse(column.getValue()));
                      if(StringUtils.equals(column.getName(), "name"))
                          abin.setName(column.getValue());
-                     list.add(abin);
                  }
+                 list.add(abin);
              }
          }
         System.out.println("-------------list----start----------");
