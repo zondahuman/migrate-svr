@@ -12,6 +12,8 @@
         <module>migrate-model</module>
         <module>migrate-service</module>
         <module>migrate-main</module>
+        <module>migrate-canal</module>
+        <module>migrate-databus</module>
     </modules>
 
 
@@ -25,6 +27,25 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba.otter/canal.instance.core -->
+        <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.instance.core</artifactId>
+            <version>1.0.22</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba.otter/canal.client -->
+        <dependency>
+            <groupId>com.alibaba.otter</groupId>
+            <artifactId>canal.client</artifactId>
+            <version>1.0.22</version>
+        </dependency>
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
