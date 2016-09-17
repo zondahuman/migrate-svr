@@ -1,12 +1,10 @@
 package com.abin.lee.migrate.canal.cluster;
 
-import java.net.InetSocketAddress;
 import java.util.List;
 
 import com.abin.lee.migrate.common.JsonUtil;
-import com.abin.lee.migrate.databus.Abin;
+import com.abin.lee.migrate.model.canal.Abin;
 import com.alibaba.otter.canal.client.CanalConnector;
-import com.alibaba.otter.canal.common.utils.AddressUtils;
 import com.alibaba.otter.canal.protocol.Message;
 import com.alibaba.otter.canal.protocol.CanalEntry.Column;
 import com.alibaba.otter.canal.protocol.CanalEntry.Entry;
@@ -14,11 +12,9 @@ import com.alibaba.otter.canal.protocol.CanalEntry.EntryType;
 import com.alibaba.otter.canal.protocol.CanalEntry.EventType;
 import com.alibaba.otter.canal.protocol.CanalEntry.RowChange;
 import com.alibaba.otter.canal.protocol.CanalEntry.RowData;
-import com.alibaba.otter.canal.protocol.exception.*;
 
 
 import com.alibaba.otter.canal.client.*;
-import com.alibaba.otter.canal.client.impl.running.ClientRunningMonitor;
 import com.google.common.collect.Lists;
 import com.google.common.primitives.Ints;
 import org.apache.commons.lang3.StringUtils;

@@ -1,4 +1,4 @@
-package com.abin.lee.migrate.databus;
+package com.abin.lee.migrate.model.canal;
 
 import java.io.Serializable;
 
