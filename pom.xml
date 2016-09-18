@@ -26,7 +26,182 @@
         <org.springframework.version>4.2.5.RELEASE</org.springframework.version>
     </properties>
 
+
+    <repositories>
+        <repository>
+            <id>apache</id>
+            <name>Maven Center</name>
+            <url> http://repo1.maven.org/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <layout>default</layout>
+        </repository>
+        <!--<repository>-->
+            <!--<id>heika</id>-->
+            <!--<name>Maven of Heika.com</name>-->
+            <!--<url>http://repo.fusesource.com/nexus/content/groups/public</url>-->
+            <!--<releases>-->
+                <!--<enabled>true</enabled>-->
+            <!--</releases>-->
+            <!--<snapshots>-->
+                <!--<updatePolicy>always</updatePolicy>-->
+                <!--<enabled>true</enabled>-->
+                <!--<checksumPolicy>warn</checksumPolicy>-->
+            <!--</snapshots>-->
+            <!--<layout>default</layout>-->
+        <!--</repository>-->
+        <repository>
+            <id>clojars.org</id>
+            <url>http://clojars.org/repo</url>
+        </repository>
+    </repositories>
+
+
     <dependencies>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-common-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-container</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-client-api</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-cluster-manager-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-schemas</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-group-leader-api</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-group-leader-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-client-common</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-client-http</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-util-cmdline-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-common-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-common-api</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-server-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-producer-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-utils-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-server-pkg</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-relay-run</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-tools-pkg</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-client-test-util</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-bootstrap-client-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-schema-tools</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-schemas-test</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-dtail-impl</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-group-leader-example</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linkedin.databus</groupId>
+            <artifactId>databus-core-schema-tools-pkg</artifactId>
+            <version>2.0.0.fk.001</version>
+        </dependency>
+
+
+
+
+
+
+
+
         <!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
         <dependency>
             <groupId>org.apache.avro</groupId>
