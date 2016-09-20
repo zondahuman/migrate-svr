@@ -31,7 +31,7 @@
         <repository>
             <id>apache</id>
             <name>Maven Center</name>
-            <url> http://repo1.maven.org/maven2/</url>
+            <url>http://repo1.maven.org/maven2/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -41,6 +41,10 @@
                 <checksumPolicy>warn</checksumPolicy>
             </snapshots>
             <layout>default</layout>
+        </repository>
+        <repository>
+            <id>osc</id>
+            <url>http://maven.oschina.net/content/groups/public/</url>
         </repository>
         <!--<repository>-->
             <!--<id>heika</id>-->
@@ -114,11 +118,17 @@
             <artifactId>databus-client-http</artifactId>
             <version>2.0.0.fk.001</version>
         </dependency>
-        <dependency>
-            <groupId>com.linkedin.databus</groupId>
-            <artifactId>databus-util-cmdline-impl</artifactId>
-            <version>2.0.0.fk.001</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.linkedin.databus</groupId>-->
+            <!--<artifactId>databus-util-cmdline-impl</artifactId>-->
+            <!--<version>2.0.0.fk.001</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>com.oracle</groupId>-->
+                    <!--<artifactId>ojdbc6</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.linkedin.databus</groupId>
             <artifactId>databus-bootstrap-common-impl</artifactId>
@@ -129,11 +139,17 @@
             <artifactId>databus-bootstrap-common-api</artifactId>
             <version>2.0.0.fk.001</version>
         </dependency>
-        <dependency>
-            <groupId>com.linkedin.databus</groupId>
-            <artifactId>databus-bootstrap-server-impl</artifactId>
-            <version>2.0.0.fk.001</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.linkedin.databus</groupId>-->
+            <!--<artifactId>databus-bootstrap-server-impl</artifactId>-->
+            <!--<version>2.0.0.fk.001</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>com.google</groupId>-->
+                    <!--<artifactId>open-replicator</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.linkedin.databus</groupId>
             <artifactId>databus-bootstrap-producer-impl</artifactId>
@@ -144,21 +160,21 @@
             <artifactId>databus-bootstrap-utils-impl</artifactId>
             <version>2.0.0.fk.001</version>
         </dependency>
-        <dependency>
-            <groupId>com.linkedin.databus</groupId>
-            <artifactId>databus-bootstrap-server-pkg</artifactId>
-            <version>2.0.0.fk.001</version>
-        </dependency>
-        <dependency>
-            <groupId>com.linkedin.databus</groupId>
-            <artifactId>databus-relay-run</artifactId>
-            <version>2.0.0.fk.001</version>
-        </dependency>
-        <dependency>
-            <groupId>com.linkedin.databus</groupId>
-            <artifactId>databus-tools-pkg</artifactId>
-            <version>2.0.0.fk.001</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.linkedin.databus</groupId>-->
+            <!--<artifactId>databus-bootstrap-server-pkg</artifactId>-->
+            <!--<version>2.0.0.fk.001</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.linkedin.databus</groupId>-->
+            <!--<artifactId>databus-relay-run</artifactId>-->
+            <!--<version>2.0.0.fk.001</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.linkedin.databus</groupId>-->
+            <!--<artifactId>databus-tools-pkg</artifactId>-->
+            <!--<version>2.0.0.fk.001</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.linkedin.databus</groupId>
             <artifactId>databus-client-test-util</artifactId>
